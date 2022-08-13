@@ -1,6 +1,8 @@
 """
-- Blackjack Card Game Program
+- Blackjack Card Game Release v1.0.0
+- https://github.com/anpo1778/Blackjack
 - Made by @Anpo1778 on 08/11/2022
+- v1.0.0 Release date: 08/11/2022
 
 """
 
@@ -189,41 +191,41 @@ while True:
             
             # Checks to see if user won for "Stand" input
             if stand_check and user_list_val > 21 and comp_list_val < 21 or comp_list_val == 21:
-                print("Game Over, You Lost! #192")
+                print("Game Over, You Lost! #194")
                 break
             if stand_check and user_list_val > 21 and comp_list_val > 21:
-                print("Game Over, You Lost! #195")
+                print("Game Over, You Lost! #197")
                 break
             if stand_check and user_list_val < 21 or user_list_val == 21:
                 if 21 > user_list_val > comp_list_val:
-                    print("Game Over, You Won! #199")
+                    print("Game Over, You Won! #201")
                     break
                 if 21 > comp_list_val > user_list_val:
-                    print("Game Over, You Lost! #202")
+                    print("Game Over, You Lost! #204")
                     break
             
             # Checks for double 21+, and double 21s
             if not user_list_var and not comp_list_var and user_list_val > 21 and comp_list_val > 21:
-                print("Game Over, You Lost! #207")
+                print("Game Over, You Lost! #209")
                 break
             if user_list_var and user_list_val == 21 and comp_list_val == 21:
-                print("Game Over, It's a tie! #210")
+                print("Game Over, It's a tie! #212")
                 break
             
             # Checks if user/comp numbers are 21
             if user_list_var and user_list_val == 21:
-                print("Game Over, You Won! #215")
+                print("Game Over, You Won! #217")
                 break
             if comp_list_var and comp_list_val == 21:
-                print("Game Over, You Lost! #218")
+                print("Game Over, You Lost! #220")
                 break
             
             # Checks if user/comp numbers are over 21
             if not comp_list_var and comp_list_val > 21:
-                print("Game Over, You Won! #223")
+                print("Game Over, You Won! #225")
                 break
             if not user_list_var and user_list_val > 21:
-                print("Game Over, You Lost! #226")
+                print("Game Over, You Lost! #228")
                 break
             
             # Checks if user/comp numbers are under 21
